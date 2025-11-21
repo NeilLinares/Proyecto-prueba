@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ArequipaGo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="/css/pricipal-style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              class="rounded-circle ms-3"
+              src="/assets/logo/logo.png"
+              alt="ArequipaGO"
+              width="50px"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="/principal.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Restaurantes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Diversion</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Nuevos Lugares</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Emprendiemiento</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-disabled="true">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner position-relative">
+          <div class="carousel-item active" style="max-height: 700px">
+            <img
+              src="/assets/images/plazadearmas.jpg"
+              class="d-block w-100"
+              alt="Plza de Armas Arequipa"
+            />
+          </div>
+          <div class="carousel-item" style="max-height: 700px">
+            <img
+              src="/assets/images/colca.jpg"
+              class="d-block w-100"
+              alt="Cañon del Colca"
+            />
+          </div>
+          <div class="carousel-item" style="max-height: 700px">
+            <img
+              src="/assets/images/chilina.jpg"
+              class="d-block w-100"
+              alt="Rio Chilina"
+            />
+          </div>
+          <div
+            class="carousel-text position-absolute top-50 start-50 translate-middle d-sm-none"
+          >
+            <h2 class="fs-2">Descubre Arequipa</h2>
+            <p class="fs-6">
+              La ciudad blanca te espera con historia, cultura y hermosos
+              paisajes.
+            </p>
+          </div>
+          <div
+            class="carousel-text position-absolute top-50 start-50 translate-middle d-none d-sm-block"
+          >
+            <h2 class="fs-2">Descubre Arequipa</h2>
+            <p class="fs-6">
+              La ciudad blanca te invita a descubrir su encanto único, donde la
+              historia, la arquitectura colonial y los paisajes volcánicos se
+              unen para ofrecer una experiencia inolvidable llena de cultura,
+              tradición y aventura.
+            </p>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="container">
+        <div class="row my-5">
+          <div class="col text-center">
+            <h2>Explora lo Mejor de Arequipa</h2>
+            <p class="lead">
+              Descubre los lugares más emblemáticos, la gastronomía exquisita y
+              las aventuras que te esperan en la ciudad blanca.
+            </p>
+          </div>
+          <div class="row mt-5">
+            <div
+              class="col-md-6 d-flex justify-content-center align-items-center"
+            >
+              <div class="card border-0 text-center" style="width: 50%">
+                <img
+                  src="/assets/images/restaurante.jpg"
+                  class="card-img-top rounded-5"
+                  alt="Restaurante"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Restaurantes</h5>
+
+                  <a href="#" class="btn btn-primary">Vamos</a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-md-6 d-flex justify-content-center align-items-center mt-5"
+            >
+              <div
+                class="card border-0 text-center"
+                style="width: 50%"
+              >
+                <img
+                  src="/assets/images/diversion.jpg"
+                  class="card-img-top rounded-5"
+                  alt="Restaurante"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Diversion</h5>
+
+                  <a href="#" class="btn btn-primary">Vamos</a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-md-6 d-flex justify-content-center align-items-center mt-5"
+            >
+              <div class="card border-0 text-center" style="width: 50%">
+                <img
+                  src="/assets/images/viajes.png"
+                  class="card-img-top rounded-5"
+                  alt="Restaurante"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Viajes</h5>
+
+                  <a href="#" class="btn btn-primary">Vamos</a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-md-6 d-flex justify-content-center align-items-center mt-5"
+            >
+              <div class="card border-0 text-center" style="width: 50%">
+                <img
+                  src="/assets/images/emprendimiento.jpg"
+                  class="card-img-top rounded-5"
+                  alt="Restaurante"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Emprendiemiento</h5>
+
+                  <a href="#" class="btn btn-primary">Vamos</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container-fluid bg-dark p-3">
+        <div class="row justify-content-center text-center text-white mt-5">
+          <div class="col-md-4 mb-3">
+            <h5>Redes Sociales</h5>
+            <a href="#" class="text-decoration-none text-white me-3"
+              ><i class="bi bi-facebook"></i
+            ></a>
+            <a href="#" class="text-decoration-none text-white me-3"
+              ><i class="bi bi-instagram"></i
+            ></a>
+            <a href="#" class="text-decoration-none text-white me-3"
+              ><i class="bi bi-tiktok"></i
+            ></a>
+            <a href="#" class="text-decoration-none text-white"
+              ><i class="bi bi-whatsapp"></i
+            ></a>
+          </div>
+
+          <div class="col-md-4 mb-3">
+            <h5>Contacto</h5>
+            <p class="mb-1">Email: contacto@arequipago.com</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col text-center text-white">
+            <p class="mt-4">ArequipaGo &copy; 2024. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diversión en Arequipa - ArequipaGo</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="css/diversion-style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img class="rounded-circle ms-3" src="assets/logo/logo.png" alt="ArequipaGO" width="50px" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Restaurantes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Diversión</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Nuevos Lugares</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Eventos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <header class="hero-simple">
+        <div class="container text-center text-white py-5">
+            <h1 class="display-4">Diversión en Arequipa</h1>
+            <p class="lead">Descubre los mejores lugares para pasarla bien</p>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <div class="row g-4" id="lugaresContainer">
+
+            <div class="col-md-6 col-lg-4 lugar-card">
+                <div class="card h-100 shadow-sm">
+                    <img src="assets/images/MundoAlpaca.jpg" class="card-img-top" alt="Mundo Alpaca">
+                    <div class="card-body">
+                        <h5 class="card-title">Mundo Alpaca</h5>
+                        <p class="card-text">Conoce de cerca a las alpacas y aprende sobre la industria textil
+                            arequipeña.</p>
+                        <p class="text-muted mb-2">
+                            <i class="bi bi-geo-alt"></i> Av. Ejército
+                        </p>
+                        <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#modal1">
+                            Ver más <i class="bi bi-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 lugar-card">
+                <div class="card h-100 shadow-sm">
+                    <img src="assets/images/SelvaAlegre.jpg" class="card-img-top" alt="Parque Selva Alegre">
+                    <div class="card-body">
+                        <h5 class="card-title">Parque Selva Alegre</h5>
+                        <p class="card-text">Hermoso parque con áreas verdes, juegos para niños y espacios para picnic.
+                        </p>
+                        <p class="text-muted mb-2">
+                            <i class="bi bi-geo-alt"></i> Selva Alegre
+                        </p>
+                        <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#modal2">
+                            Ver más <i class="bi bi-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 lugar-card">
+                <div class="card h-100 shadow-sm">
+                    <img src="assets/images/rafting.jpg" class="card-img-top" alt="Rafting">
+                    <div class="card-body">
+                        <h5 class="card-title">Rafting en Río Chili</h5>
+                        <p class="card-text">Vive la adrenalina navegando las rápidas del río Chili.</p>
+                        <p class="text-muted mb-2">
+                            <i class="bi bi-geo-alt"></i> Río Chili
+                        </p>
+                        <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#modal3">
+                            Ver más <i class="bi bi-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 lugar-card">
+                <div class="card h-100 shadow-sm">
+                    <img src="assets/images/casonaforum.jpg" class="card-img-top" alt="Casona Forum">
+                    <div class="card-body">
+                        <h5 class="card-title">Casona Forum</h5>
+                        <p class="card-text">Discoteca y bar con ambiente único en una casona colonial.</p>
+                        <p class="text-muted mb-2">
+                            <i class="bi bi-geo-alt"></i> Centro Histórico
+                        </p>
+                        <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#modal4">
+                            Ver más <i class="bi bi-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 lugar-card">
+                <div class="card h-100 shadow-sm">
+                    <img src="assets/images/mirador.jpg" class="card-img-top" alt="Mirador Yanahuara">
+                    <div class="card-body">
+                        <h5 class="card-title">Mirador de Yanahuara</h5>
+                        <p class="card-text">Vistas espectaculares de los volcanes. Perfecto para fotos.</p>
+                        <p class="text-muted mb-2">
+                            <i class="bi bi-geo-alt"></i> Yanahuara
+                        </p>
+                        <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#modal5">
+                            Ver más <i class="bi bi-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 lugar-card">
+                <div class="card h-100 shadow-sm">
+                    <img src="assets/images/lambramani.jpg" class="card-img-top" alt="Parque Lambramani">
+                    <div class="card-body">
+                        <h5 class="card-title">Parque Lambramani</h5>
+                        <p class="card-text">Entretenimiento en una gran variedad</p>
+                        <p class="text-muted mb-2">
+                            <i class="bi bi-geo-alt"></i> Paucarpata
+                        </p>
+                        <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#modal6">
+                            Ver más <i class="bi bi-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+
+
+    <div class="modal fade" id="modal1" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Mundo Alpaca</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/images/MundoAlpaca.jpg" class="img-fluid rounded mb-3" alt="Mundo Alpaca">
+                    <p><strong>Ubicación:</strong> Av. Ejército 1000, Arequipa</p>
+                    <p><strong>Horario:</strong> Lunes a Domingo: 9:00 AM - 6:00 PM</p>
+                    <p><strong>Precio:</strong> Entrada gratuita | Tours: S/. 20</p>
+                    <hr>
+                    <p>Centro de interpretación donde podrás conocer todo sobre las alpacas y vicuñas. Incluye museo
+                        textil y tienda de productos de alta calidad.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <a href="https://maps.google.com/?q=Mundo+Alpaca+Arequipa" target="_blank" class="btn btn-primary">
+                        <i class="bi bi-map"></i> Ver en Mapa
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Parque Selva Alegre</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/images/SelvaAlegre.jpg" class="img-fluid rounded mb-3" alt="Parque">
+                    <p><strong>Ubicación:</strong> Distrito de Selva Alegre</p>
+                    <p><strong>Horario:</strong> Todos los días: 6:00 AM - 8:00 PM</p>
+                    <p><strong>Precio:</strong> Entrada gratuita</p>
+                    <hr>
+                    <p>Parque urbano perfecto para pasar el día en familia. Cuenta con áreas verdes, juegos infantiles,
+                        canchas deportivas y zonas de picnic.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <a href="https://maps.google.com/?q=Parque+Selva+Alegre+Arequipa" target="_blank"
+                        class="btn btn-primary">
+                        <i class="bi bi-map"></i> Ver en Mapa
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal3" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Rafting en Río Chili</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/images/rafting.jpg" class="img-fluid rounded mb-3" alt="Rafting">
+                    <p><strong>Ubicación:</strong> Punto de encuentro: Puente Grau</p>
+                    <p><strong>Horario:</strong> Tours: 9:00 AM, 12:00 PM y 3:00 PM</p>
+                    <p><strong>Precio:</strong> Desde S/. 80 (incluye equipo y guía)</p>
+                    <hr>
+                    <p>Experiencia llena de adrenalina navegando las rápidas del río Chili. Apto para principiantes y
+                        expertos. Edad mínima: 12 años.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <a href="https://maps.google.com/?q=Rafting+Rio+Chili+Arequipa" target="_blank"
+                        class="btn btn-primary">
+                        <i class="bi bi-map"></i> Ver en Mapa
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal4" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Casona Forum</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/images/casonaforum.jpg" class="img-fluid rounded mb-3" alt="Casona">
+                    <p><strong>Ubicación:</strong> Calle San Francisco 317</p>
+                    <p><strong>Horario:</strong> Jueves a Sábado: 10:00 PM - 4:00 AM</p>
+                    <p><strong>Precio:</strong> Cover: S/. 20 - S/. 30</p>
+                    <hr>
+                    <p>Discoteca única en casona colonial restaurada. Música electrónica, reggaetón y música en vivo.
+                        Mayores de 18 años.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <a href="https://maps.google.com/?q=Casona+Forum+Arequipa" target="_blank" class="btn btn-primary">
+                        <i class="bi bi-map"></i> Ver en Mapa
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal5" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Mirador de Yanahuara</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/images/mirador.jpg" class="img-fluid rounded mb-3" alt="Mirador">
+                    <p><strong>Ubicación:</strong> Plaza de Yanahuara</p>
+                    <p><strong>Horario:</strong> 24 horas</p>
+                    <p><strong>Precio:</strong> Entrada gratuita</p>
+                    <hr>
+                    <p>El mirador más famoso de Arequipa. Ofrece vistas panorámicas de los volcanes Misti, Chachani y
+                        Pichu Pichu. Ideal para fotografías.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <a href="https://maps.google.com/?q=Mirador+Yanahuara+Arequipa" target="_blank"
+                        class="btn btn-primary">
+                        <i class="bi bi-map"></i> Ver en Mapa
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal6" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Parque Lambramani</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/images/lambramani.jpg" class="img-fluid rounded mb-3" alt="Lambramani">
+                    <p><strong>Ubicación:</strong> Av. Lambramani, Paucarpata</p>
+                    <p><strong>Horario:</strong> Martes a Domingo: 8:00 AM - 6:00 PM</p>
+                    <p><strong>Precio:</strong> Entrada: S/. 3 | Piscina: S/. 5 | Zoológico: S/. 2</p>
+                    <hr>
+                    <p>Disfruta de una gran varieda de actividades, desde entretenimiento hasta ir de compras y degustar
+                        la gastronomía local.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <a href="https://maps.google.com/?q=OutletArauco Arequipa" target="_blank" class="btn btn-primary">
+                        <i class="bi bi-map"></i> Ver en Mapa
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container-fluid bg-dark p-3">
+            <div class="row justify-content-center text-center text-white mt-5">
+                <div class="col-md-4 mb-3">
+                    <h5>Redes Sociales</h5>
+                    <a href="#" class="text-decoration-none text-white me-3"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-decoration-none text-white me-3"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-decoration-none text-white me-3"><i class="bi bi-tiktok"></i></a>
+                    <a href="#" class="text-decoration-none text-white"><i class="bi bi-whatsapp"></i></a>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <h5>Contacto</h5>
+                    <p class="mb-1">Email: contacto@arequipago.com</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col text-center text-white">
+                    <p class="mt-4">ArequipaGo &copy; 2024. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

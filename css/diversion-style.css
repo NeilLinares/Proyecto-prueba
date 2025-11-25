@@ -1,0 +1,89 @@
+.hero-simple {
+    background-image: url('https://thumbs.dreamstime.com/b/catedral-basílica-en-la-plaza-de-los-brazos-arequipa-perú-nocturna-armas-231545022.jpg');
+    background-position: center;
+    padding: 50px 0;
+}
+
+.lugar-card:hover {
+    transform: translateY(-10px) scale(1.02);
+}
+
+.lugar-card:hover .card {
+    box-shadow: 0 15px 35px rgba(102, 126, 234, 0.4);
+    border: 2px solid #667eea;
+}
+
+.card-img-top {
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.lugar-card:hover .card-img-top {
+    transform: scale(1.1);
+}
+
+.card {
+    overflow: hidden;
+    border-radius: 15px !important;
+    border: 2px solid transparent;
+    transition: all 0.4s ease;
+}
+
+.card-title {
+    color: #667eea;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.lugar-card:hover .card-title {
+    color: #764ba2;
+}
+
+.card .btn-primary {
+    background: linear-gradient(135deg, #868686 0%, #2d2d30 100%);
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.card .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.btn-outline-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(13, 110, 253, 0.3);
+}
+
+.modal-body img {
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.modal-header {
+    background: linear-gradient(135deg, #868686 0%, #2d2d30 100%);
+    color: white;
+}
+
+.modal-header .btn-close {
+    filter: brightness(0) invert(1);
+}
+
+
+.lugar-card {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.text-muted i {
+    color: #b14747 !important;
+}
+
+.card .btn-primary:active {
+    animation: pulse 0.3s ease;
+}
+
+.my-navbar {
+    background: linear-gradient(135deg, #868686 0%, #2d2d30 100%);
+}

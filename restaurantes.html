@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Restaurantes de Arequipa</title>
+    <link rel="stylesheet" href="js/scrip.js" />
+    <link rel="stylesheet" href="css/restaurante.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            class="rounded-circle ms-3"
+            src="/assets/logo/logo.png"
+            alt="ArequipaGO"
+            width="50px"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="restaurantes.html">Restaurantes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="diversion.html">Diversión</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Nuevos Lugares</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Eventos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-disabled="true">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <body>
+    <header class="encabezado">
+      <div class="contenido-encabezado">
+        <h1 class="titulo">Guía de Restaurantes — Arequipa</h1>
+        <input
+          id="buscador"
+          class="buscador"
+          placeholder="Buscar restaurante..."
+        />
+      </div>
+    </header>
+    <main class="contenido">
+      <section class="bloque-filtros">
+        <h2 class="titulo-filtros">Categoria culinaria</h2>
+        <div id="grupo-filtros" class="grupo-filtros">
+          <button class="boton-filtro activo" data-categoria="todos">
+            Todos
+          </button>
+          <button class="boton-filtro" data-categoria="picanteria">
+            Picanterías tradicionales
+          </button>
+          <button class="boton-filtro" data-categoria="sopas">
+            Alta cocina / Gourmet
+          </button>
+          <button class="boton-filtro" data-categoria="carnes">Fusión</button>
+          <button class="boton-filtro" data-categoria="postres">
+            Cocina regional moderna
+          </button>
+          <button class="boton-filtro" data-categoria="postres">
+            Temáticos y casuales
+          </button>
+        </div>
+      </section>
+      <section id="lista-restaurantes" class="lista-restaurantes">
+        <div
+          class="tarjeta-restaurante"
+          data-categoria="picanteria"
+          data-nombre="La Picantería del Carmen"
+        >
+          <div class="tarjeta">
+            <img src="/assets/images/imagenes.jpg" class="imagen-tarjeta" />
+            <div class="cuerpo-tarjeta">
+              <h3 class="nombre-restaurante">Picantería La Mundial</h3>
+              <p class="descripcion">
+                Picanteria tradicional arequipeña, cocina ancestral la de antes
+                y la de hoy
+              </p>
+              <p class="detalle">
+                <strong>Dirección:</strong>Lucas Poblete 211, Arequipa 04001
+              </p>
+              <button class="boton-menu">Mas informacion</button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="tarjeta-restaurante"
+          data-categoria="sopas"
+          data-nombre="Caldos Don Pepe"
+        >
+          <div class="tarjeta">
+            <img
+              src="/assets/images/ChichadeGastonAcurio.jpg"
+              class="imagen-tarjeta"
+            />
+            <div class="cuerpo-tarjeta">
+              <h3 class="nombre-restaurante">Chicha por Gaston Acurio</h3>
+              <p class="descripcion">
+                Asientos al aire libre · Comedor privado · Buenos cócteles
+              </p>
+              <p class="detalle">
+                <strong>Dirección:</strong>Santa Catalina 210, Cercado De
+                Arequipa 04001
+              </p>
+              <button class="boton-menu">Mas informacion</button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="tarjeta-restaurante"
+          data-categoria="carnes"
+          data-nombre="Asados Arequipa Grill"
+        >
+          <div class="tarjeta">
+            <img src="/assets/images/zigzag.jpg" class="imagen-tarjeta" />
+            <div class="cuerpo-tarjeta">
+              <h3 class="nombre-restaurante">Zig Zag</h3>
+              <p class="descripcion">
+                Chimenea · Comedor privado · Buenos cócteles
+              </p>
+              <p class="detalle">
+                <strong>Dirección:</strong>C. Zela 210, Cercado De Arequipa
+                04001
+              </p>
+              <button class="boton-menu">Mas informacion</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div id="ventana-menu" class="ventana-menu">
+        <div class="contenido-menu">
+          <span id="cerrar-menu" class="cerrar-menu">&times;</span>
+          <h3 id="titulo-menu"></h3>
+          <div id="cuerpo-menu"></div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <footer>
+    <div class="container-fluid bg-dark p-3">
+      <div class="row justify-content-center text-center text-white mt-5">
+        <div class="col-md-4 mb-3">
+          <h5>Redes Sociales</h5>
+          <a href="#" class="text-decoration-none text-white me-3"
+            ><i class="bi bi-facebook"></i
+          ></a>
+          <a href="#" class="text-decoration-none text-white me-3"
+            ><i class="bi bi-instagram"></i
+          ></a>
+          <a href="#" class="text-decoration-none text-white me-3"
+            ><i class="bi bi-tiktok"></i
+          ></a>
+          <a href="#" class="text-decoration-none text-white"
+            ><i class="bi bi-whatsapp"></i
+          ></a>
+        </div>
+
+        <div class="col-md-4 mb-3">
+          <h5>Contacto</h5>
+          <p class="mb-1">Email: contacto@arequipago.com</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col text-center text-white">
+          <p class="mt-4">ArequipaGo &copy; 2024. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</html>

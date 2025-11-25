@@ -1,0 +1,56 @@
+h1 {
+  background: url(https://i.pinimg.com/1200x/8e/22/c6/8e22c669dbc2ba5236de4ecf589f3bbb.jpg);
+
+  text-align: center;
+  padding: 130px 0px;
+  background-size: cover;
+  background-position: center;
+}
+.contacto h1 {
+  color: white;
+  font-size: 63px;
+}
+.formul {
+  max-width: 550px;
+  padding: 20px;
+}
+
+.oficinas {
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.tod {
+  justify-items: first baseline;
+}
+.oficinas h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.card h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.info {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 15px;
+}
+
+.icon {
+  color: #d9822b;
+  font-size: 22px;
+}

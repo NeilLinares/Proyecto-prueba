@@ -1,0 +1,61 @@
+.lugar-card {
+    display: inline-block;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    font-family: "Quicksand", sans-serif;
+    background-color: #fff;
+}
+
+.lugar-image {
+    width: 100%;
+    height: auto;
+}
+
+.lugar-info {
+    padding: 20px;
+}
+
+.lugar-info h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.location, .distance, .description {
+    margin: 8px 0;
+    color: #555;
+}
+
+.rating {
+    margin-top: 12px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.score {
+    font-size: 1.5em;
+    color: #27ae60;
+}
+
+.location-score {
+    color: #2980b9;
+}
+
+.price-button {
+    margin-top: 16px;
+    padding: 10px 20px;
+    background-color: #e67e22;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.price-button:hover {
+    background-color: #d35400;
+}

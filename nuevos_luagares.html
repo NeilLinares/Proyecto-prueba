@@ -77,53 +77,66 @@
         </nav>
     </header>   
 
-    <div class="lugar-card">
-    <img src="assets/images/Arequipac.jpg" alt="La Hostería Boutique Hotel" class="lugar-image">
-        <div class="lugar-info">
-        <h2>Plaza de armas</h2>
-        <p class="location">Centro Histórico, Arequipa - <a href="https://maps.app.goo.gl/JK2kkVAP6ss2eesJ8" target="_blank">Mostrar en el mapa</a></p>
-        <p class="description">
-        La ciudad te recibe con un Centro Histórico que es Patrimonio Mundial de la UNESCO. Con sus hermosas fachadas de piedra volcánica blanca.
-        </p>
-        <div class="rating">
-        <span class="score">8.5</span> Muy bien – 1,145 comentarios<br>
-        <span class="location-score">Ubicación: 9.6</span>
+
+
+    <div class="container">
+        <form id="addPlaceForm">
+            <label for="name">Nombre del Lugar:</label>
+            <input type="text" id="name" name="name" required placeholder="Ej: Restaurante El Sabor">
+            <label for="category">Categoría:</label>
+            <select id="category" name="category" required>
+                <option value="">Selecciona una categoría</option>
+                <option value="comer">Comer (Restaurante, Cafetería)</option>
+                <option value="divertirse">Divertirse (Bar, Teatro, Parque)</option>
+                <option value="visitar">Visitar (Museo, Monumento, Tienda)</option>
+                <option value="otros">Otros</option>
+            </select>
+            <label for="description">Descripción:</label>
+            <textarea id="description" name="description" rows="4" required placeholder="Describe tu lugar: menú, ambiente, horarios, etc."></textarea>
+            <label for="location">Ubicación (Dirección):</label>
+            <input type="text" id="location" name="location" required placeholder="Ej: Calle Principal 123, Ciudad">
+            <label for="contact">Contacto (Teléfono o Email):</label>
+            <input type="text" id="contact" name="contact" placeholder="Ej: +51 999 999 999 o info@local.com">
+            <label for="image">Imagen (URL opcional):</label>
+            <input type="url" id="image" name="image" placeholder="Ej: https://ejemplo.com/imagen.jpg">
+            <button type="submit">Subir Lugar</button>
+        </form>
+        <div class="recommendations">
+            <h3>Lugares Subidos (Tarjetas)</h3>
+            <p>Aquí aparecerán las tarjetas de los lugares subidos.</p>
+            <div class="cards-container"></div> 
         </div>
-        <button class="price-button">Ver mas</button>
     </div>
-    </div>
 
 
-        <div class="lugar-card">
-        <img src="assets/images/iglesia-santa-catalina-arequipa-full.jpg" class="lugar-image">
-            <div class="lugar-info">
-            <h2>Monasterio de Santa Catalina</h2>
-            <p class="location">Monasterio de Santa Catalina - <a href="https://maps.app.goo.gl/PkCgeKqw6VtXe85QA" target="_blank">Mostrar en el mapa</a></p>
-            <p class="description">
-            Destinar por lo menos 2 horas para recorrer todos sus callejones y perderse en su historia.
-            <div class="rating">
-            <span class="score">8.0</span> Muy bien – 1,000 comentarios<br>
-            <span class="location-score">Ubicación: 9.9</span>
+
+
+    <footer>
+        <div class="container-fluid bg-dark p-3">
+            <div class="row justify-content-center text-center text-white mt-5">
+                <div class="col-md-4 mb-3">
+                    <h5>Redes Sociales</h5>
+                    <a href="#" class="text-decoration-none text-white me-3"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-decoration-none text-white me-3"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-decoration-none text-white me-3"><i class="bi bi-tiktok"></i></a>
+                    <a href="#" class="text-decoration-none text-white"><i class="bi bi-whatsapp"></i></a>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <h5>Contacto</h5>
+                    <p class="mb-1">Email: contacto@arequipago.com</p>
+                </div>
             </div>
-            <button class="price-button">Ver mas</button>
-        </div>
-        </div>
 
-
-        <div class="lugar-card">
-        <img src="assets/images/yanahuara.jpg"  class="lugar-image">
-            <div class="lugar-info">
-            <h2>Mirador de Yanahuara</h2>
-            <p class="location">Monasterio de Santa Catalina - <a href="https://maps.app.goo.gl/PkCgeKqw6VtXe85QA" target="_blank">Mostrar en el mapa</a></p>
-            <p class="description">
-            Destinar por lo menos 2 horas para recorrer todos sus callejones y perderse en su historia.
-            <div class="rating">
-            <span class="score">8.0</span> Muy bien – 1,000 comentarios<br>
-            <span class="location-score">Ubicación: 9.9</span>
+            <div class="row">
+                <div class="col text-center text-white">
+                    <p class="mt-4">ArequipaGo &copy; 2024. All rights reserved.</p>
+                </div>
             </div>
-            <button class="price-button">Ver mas</button>
         </div>
-        </div>
+    </footer>
 
+
+    <script src="js/pricipal-scrip.js"></script>
 </body>
 </html>

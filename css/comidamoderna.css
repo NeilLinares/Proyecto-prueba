@@ -1,0 +1,208 @@
+/* ====== RESET GENERAL ====== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand", sans-serif;
+  background-color: #f5f5f5;
+  color: #222;
+}
+
+/* ====== TITULO ====== */
+h1 {
+  text-align: center;
+  margin: 28px 10px 10px;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+/* ====== CARRUSEL ====== */
+.carrusel {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0 20px;
+}
+
+.carrusel img {
+  width: 82%;
+  max-width: 1000px;
+  height: auto;
+  border-radius: 18px;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.25);
+  transition: transform 0.5s ease;
+}
+
+.carrusel img:hover {
+  transform: scale(1.02);
+}
+
+/* ====== PRIMER BLOQUE DE TARJETAS (BOOTSTRAP) ====== */
+.tarjetas {
+  width: 100%;
+  max-width: 1200px;
+  margin: 35px auto 60px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 18rem;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+  transition: transform 0.28s ease, box-shadow 0.28s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 18px 36px rgba(0,0,0,0.32);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 15px;
+  text-align: center;
+  flex: 1;
+}
+
+.card-title {
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.card-text {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 12px;
+}
+
+/* Enlaces de tarjetas grandes */
+.card-body a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #8b0000;
+  padding: 6px 14px;
+  border-radius: 20px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.card-body a:hover {
+  background: rgba(139,0,0,0.1);
+  color: #000;
+}
+
+/* ====== SEGUNDO BLOQUE DE TARJETAS (custom) ====== */
+.tarjetas-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 10px auto 70px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.tarjeta {
+  width: 260px;
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+  padding-bottom: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 16px 34px rgba(0,0,0,0.35);
+}
+
+.tarjeta img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+}
+
+.tarjeta h3 {
+  margin: 12px 8px 6px;
+  font-size: 17px;
+}
+
+.tarjeta p {
+  font-size: 14px;
+  padding: 0 10px 10px;
+  color: #444;
+}
+
+.tarjeta a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #8b0000;
+  padding: 6px 12px;
+  border-radius: 20px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.tarjeta a:hover {
+  background: rgba(139,0,0,0.1);
+  color: black;
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 900px) {
+  .carrusel img {
+    width: 92%;
+  }
+
+  .card img {
+    height: 180px;
+  }
+
+  .tarjeta img {
+    height: 150px;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 22px;
+  }
+
+  .tarjetas,
+  .tarjetas-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .card {
+    width: 92%;
+    max-width: 360px;
+  }
+
+  .tarjeta {
+    width: 92%;
+    max-width: 340px;
+  }
+}

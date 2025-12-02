@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/cantacto.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            class="rounded-circle ms-3"
+            src="assets/logo/logo.png"
+            alt="ArequipaGO"
+            width="50px"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="restaurantes.html">Restaurantes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="diversion.html">Diversión</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="nuevos_lugares.html">Nuevos Lugares</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="eventos.html">Eventos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="contacto-hero">
+      <h1>CONTÁCTANOS</h1>
+    </header>
+
+    <div class="contacto-wrapper">
+      <div class="form-container">
+        <h2 class="form-title">Escríbenos</h2>
+        <p class="form-subtitle">Cuéntanos cómo podemos ayudarte</p>
+
+        <form class="formul">
+          <div class="mb-3">
+            <label class="form-label">Nombre completo</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Tu nombre"
+              required
+            />
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Correo electrónico</label>
+            <input
+              type="email"
+              class="form-control"
+              placeholder="correo@ejemplo.com"
+              required
+            />
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Asunto</label>
+            <select class="form-select" required>
+              <option disabled selected>Selecciona un asunto</option>
+              <option>Reservas</option>
+              <option>Información turística</option>
+              <option>Sugerencias</option>
+              <option>Otro</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">WhatsApp</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="+51 9XX XXX XXX"
+              required
+            />
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Mensaje</label>
+            <textarea
+              class="form-control"
+              rows="4"
+              placeholder="Escribe tu consulta"
+              required
+            ></textarea>
+          </div>
+
+          <div class="form-check mb-3">
+            <input type="checkbox" class="form-check-input" required />
+            <label class="form-check-label"
+              >Acepto los términos y condiciones</label
+            >
+          </div>
+
+          <button class="btn-enviar">Enviar</button>
+        </form>
+      </div>
+
+      <div class="info-container">
+        <img
+          src="https://i.pinimg.com/1200x/20/4b/ed/204bed133d6be0acdde4dfed33de548c.jpg"
+          width="140"
+          class="info-img"
+        />
+
+        <h3>Nuestras Oficinas</h3>
+
+        <div class="info-card">
+          <h4>Cercado de Arequipa</h4>
+          <p>
+            📍 Plaza de Armas<br />
+            Arequipa, Perú
+          </p>
+        </div>
+
+        <div class="info-card">
+          <h4>Yanahuara</h4>
+          <p>
+            📍 Yanahuara<br />
+            Arequipa, Perú
+          </p>
+        </div>
+
+        <div class="info-card">
+          <h4>Miraflores</h4>
+          <p>
+            📍 Av. Pro Hogar 917<br />
+            Arequipa, Perú
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container-fluid bg-dark p-3">
+        <div class="row justify-content-center text-center text-white mt-5">
+          <div class="col-md-4 mb-3">
+            <h5>Redes Sociales</h5>
+            <a href="#" class="text-decoration-none text-white me-3"
+              ><i class="bi bi-facebook"></i
+            ></a>
+            <a href="#" class="text-decoration-none text-white me-3"
+              ><i class="bi bi-instagram"></i
+            ></a>
+            <a href="#" class="text-decoration-none text-white me-3"
+              ><i class="bi bi-tiktok"></i
+            ></a>
+            <a href="#" class="text-decoration-none text-white"
+              ><i class="bi bi-whatsapp"></i
+            ></a>
+          </div>
+
+          <div class="col-md-4 mb-3">
+            <h5>Contacto</h5>
+            <p class="mb-1">Email: contacto@arequipago.com</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col text-center text-white">
+            <p class="mt-4">ArequipaGo &copy; 2024. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

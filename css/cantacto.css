@@ -1,0 +1,88 @@
+body{
+  font-family: "Quicksand", sans-serif;
+}
+
+.contacto-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url("https://i.pinimg.com/1200x/8e/22/c6/8e22c669dbc2ba5236de4ecf589f3bbb.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 130px 20px;
+  text-align: center;
+}
+
+.contacto-hero h1 {
+  color: white;
+  font-size: 55px;
+  font-weight: 500;
+}
+
+
+.contacto-wrapper {
+  display: flex;
+  gap: 40px;
+  padding: 40px;
+  justify-content: center;
+}
+
+.form-container,
+.info-container {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-container {
+  width: 50%;
+}
+
+.info-container {
+  width: 35%;
+  text-align: center;
+}
+
+.form-title {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.btn-enviar {
+  background-color: #a06904;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.btn-enviar:hover {
+  background-color: #f0bf63;
+  color: #473000;
+}
+
+.info-card {
+  background: #fff6e0;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+
+.info-img {
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+  .contacto-wrapper {
+    flex-direction: column;
+  }
+
+  .form-container,
+  .info-container {
+    width: 100%;
+  }
+}

@@ -1,3 +1,7 @@
+body {
+    font-family: "Quicksand", sans-serif;
+}
+
 .hero-simple {
     background-image: url('https://thumbs.dreamstime.com/b/catedral-basílica-en-la-plaza-de-los-brazos-arequipa-perú-nocturna-armas-231545022.jpg');
     background-position: center;
@@ -19,10 +23,6 @@
     transition: transform 0.4s ease;
 }
 
-.lugar-card:hover .card-img-top {
-    transform: scale(1.1);
-}
-
 .card {
     overflow: hidden;
     border-radius: 15px !important;
@@ -31,7 +31,7 @@
 }
 
 .card-title {
-    color: #667eea;
+    color: #000000;
     font-weight: 600;
     transition: color 0.3s ease;
 }
@@ -41,14 +41,15 @@
 }
 
 .card .btn-primary {
-    background: linear-gradient(135deg, #868686 0%, #2d2d30 100%);
+    background-color: #a06904;
+    color: white;
     border: none;
-    transition: all 0.3s ease;
 }
 
 .card .btn-primary:hover {
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+    background-color: #f0bf63;
 }
 
 .btn-outline-primary:hover {
@@ -63,27 +64,10 @@
 }
 
 .modal-header {
-    background: linear-gradient(135deg, #868686 0%, #2d2d30 100%);
+    background-color: #a06904;
     color: white;
 }
 
-.modal-header .btn-close {
-    filter: brightness(0) invert(1);
-}
-
-
 .lugar-card {
     animation: fadeInUp 0.6s ease-out;
-}
-
-.text-muted i {
-    color: #b14747 !important;
-}
-
-.card .btn-primary:active {
-    animation: pulse 0.3s ease;
-}
-
-.my-navbar {
-    background: linear-gradient(135deg, #868686 0%, #2d2d30 100%);
 }
